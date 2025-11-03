@@ -1,21 +1,22 @@
-// Source code is decompiled from a .class file using FernFlower decompiler (from Intellij IDEA).
-public class Ascend {
-   public Ascend() {
-   }
+// Splits a restaurant bill evenly among three diners.
 
-   public static void main(String[] var0) {
-      int var1 = Integer.parseInt(var0[0]);
-      int var2 = Integer.parseInt(var0[1]);
-      int var3 = Integer.parseInt(var0[2]);
-      int var4 = Math.min(var1, var2);
-      var4 = Math.min(var4, var3);
-      if (var4 == var1) {
-         System.err.println("" + var1 + " " + Math.min(var2, var3) + " " + Math.max(var2, var3));
-      } else if (var4 == var2) {
-         System.err.println("" + var2 + " " + Math.min(var1, var3) + " " + Math.max(var1, var3));
-      } else if (var4 == var3) {
-         System.err.println("" + var3 + " " + Math.min(var1, var2) + " " + Math.max(var1, var2));
-      }
+public class Bill3 
+{
+	public static void main(String[] args) 
+	{
+		
+		// To get you started, here is the first line in the program:
+	    String name1 = args[0];
+		String name2 = args[1];
+		String name3= args[2];
+        int total = Integer.parseInt(args[3]);
 
-   }
+		double count = Math.ceil(total/3);
+		   System.err.println("Dear " + name3 + ", "+ name2 + " and "+ name1 + ": Pay " +  (count)+ " Shekels each." );
+		   
+
+
+		  
+	}
 }
+

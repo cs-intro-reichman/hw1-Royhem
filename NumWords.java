@@ -9,8 +9,7 @@ public class NumWords {
 			int unit =a%10;
 			int tens =(a/10)%10;
 
-			System.err.println(hundreds+ " hundreds, "+tens +" tens, "+ unit + " and ones.");
-			
+			System.out.println(hundreds + " hundreds, " + tens + " tens, and " + unit + " ones.");			
 
 	}
 }
